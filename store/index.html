@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-wrapper">
+        <form id="input-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="text"
+                name="cityInput"
+                class="form-control"
+                id="citySearch"
+                placeholder="Enter the city name.."
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
+        <ul class="city-information">
+          <li id="city">Delhi</li>
+          <li id="time">16:30:43</li>
+          <li id="weather-description">Rainy</li>
+        </ul>
+        <div class="row">
+          <div class="col-8">
+            <span id="icon">
+              <img src="rainy.png" alt="Rainy" id="weather-icon" />
+            </span>
+            <strong id="temperature"> 12 </strong>
+            <span class="temp-conversion" id="celsius">°C
+            </span>
+          </div>
+          <div class="col-4">
+            <ul class="weather-condition">
+              <li>Humidity : <span id="humidity">12</span>%</li>
+              <li>Wind : <span id="wind">12</span> km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div id="forecast-description">
+        </div>
+      </div>
+      
+      <div class="type">
+        You can check the project on
+        <a href="https://github.com/RevatiGoyal22/Weather-Application">github</a>
+      </div>
+    
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

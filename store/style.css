@@ -1,0 +1,82 @@
+
+body{
+    /* background: linear-gradient(181.2deg, #ffdcf5 10.5%, #e0fcff 86.8%); */
+}
+.type {
+    text-align: center;
+}
+.weather-wrapper {
+    background-color: #fff;
+    border: 1px solid rgb(27, 196, 208);
+    border-radius: 6px;
+    max-width: 600px;
+    height: fit-content;
+    margin : 200px auto;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+#input-form {
+    padding-bottom: 10px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.city-information{
+    font-size: 23px;
+    color: rgba(49, 58, 58, 0.54);
+}
+li:first-letter{
+    text-transform: capitalize;
+}
+
+img {
+    position: relative;
+    width: 120px;
+    bottom: 10px;
+    padding: 10px;
+}
+strong {
+    font-size: 50px;
+    font-weight: 400;
+    padding: 0;
+    margin-right: 0;
+}
+
+.temp-conversion {
+    position: relative;
+    top: -25px;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+.weather-condition {
+    font-size: 20px;
+    color: rgba(49, 58, 58, 0.46);
+}
+
+#forecast-description {
+    height: 95px;
+    margin-right: 7px;
+    text-align: center;
+    line-height: 16px;
+}
+#forecast-day {
+    padding-top:7px;
+}
+.f{
+    margin:8px auto;
+    height: 74px;
+
+}
+#forecast-icon  {
+    top: -2.3px;
+    width:60px;
+    padding: 2px;
+    background-color: rgb(27, 196, 208);
+}
+#forecastTempMin {
+    color: black;
+    opacity: 0.54;
+}
